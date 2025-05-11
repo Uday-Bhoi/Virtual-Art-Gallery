@@ -32,7 +32,7 @@ This project was developed as part of academic coursework and showcases both fro
 
 ---
 
-### 🔐 Security Enhancements (INS SEM 6 Upgrade)
+### 🔐 Security Enhancements (Information & Network Security)
 
 Implemented to address data breaches, impersonation, and information tampering:
 
