@@ -1,37 +1,72 @@
 # 🎨 Virtual Art Gallery
 
-A secure and interactive online platform that allows users to explore, upload, and engage with digital artworks. Developed using **JSP, HTML, CSS, JDBC**, and advanced **encryption techniques**, this project is designed with a strong focus on **data security**, **user privacy**, and **user experience**.
+**Virtual Art Gallery** is a secure, user-friendly online platform that enables users to **explore**, **upload**, and **purchase** digital artworks while ensuring high levels of **data privacy**, **authentication**, and **encryption**. It is built using **JSP**, **HTML**, **CSS**, and **JDBC**, with extensive use of Java's **cryptography libraries** (SHA-256, AES, RSA, HMAC) to safeguard user data and transactional operations.
+
+This project was developed as part of academic coursework and showcases both front-end interface design and robust back-end security practices.
 
 ---
 
 ## 📌 Features
 
 ### 🌐 General Functionality
-- 🖼️ **Artwork Display:** Browse curated and user-submitted digital artworks.
-- 👩‍🎨 **Artist Profiles:** View biographies and galleries of artists.
-- ⬆️ **Upload Artworks:** Submit your own digital artworks with metadata.
-- 📥 **Admin Dashboard:** Manage submitted content.
-- 💬 **Contact Form:** Send messages to the gallery team.
 
-### 🔐 Security Enhancements (SEM 6 Upgrade)
-- 🔒 **Secure Password Storage:** Uses **SHA-256** to hash passwords.
-- 🛡️ **Session Security:** Encrypts session tokens using **AES**.
-- 🖌️ **Artwork Metadata Encryption:** Title, artist name, and descriptions are encrypted with **AES**.
-- 💳 **Encrypted Transactions:** Purchase data (card details, billing) encrypted using **RSA**.
-- 📧 **Contact Form Integrity:** Message content hashed using **HMAC** to prevent tampering.
+- 🖼️ **Artwork Display**
+  - Users can browse a curated gallery of static and user-submitted artworks.
+  - Artworks are displayed with titles, artist names, and descriptions.
+
+- 👩‍🎨 **Artist Profiles**
+  - Showcases detailed profiles of well-known artists with images and biographical summaries.
+  - Includes individual galleries of their work.
+
+- ⬆️ **Upload Artwork**
+  - Registered users can upload their own artworks via `upartwork.jsp`.
+  - Inputs include title, description, image, and contact information.
+
+- 📥 **Admin Dashboard**
+  - Basic admin interface to manage artwork entries and user submissions.
+  - Accessible only to authorized personnel.
+
+- 💬 **Contact Form**
+  - Users can send inquiries or feedback through a contact form.
+  - Data is stored with message integrity checks.
+
+---
+
+### 🔐 Security Enhancements (INS SEM 6 Upgrade)
+
+Implemented to address data breaches, impersonation, and information tampering:
+
+- 🔒 **Secure Password Storage** – `SHA-256`
+  - Passwords are hashed before being stored in the database.
+  - Even if the DB is compromised, passwords are irrecoverable.
+
+- 🛡️ **Session Security** – `AES`
+  - Session tokens are encrypted after login to prevent session hijacking.
+  - Tokens are decrypted on each page load to validate authenticity.
+
+- 🖌️ **Artwork Metadata Protection** – `AES`
+  - Title, artist name, and description are encrypted before storing.
+  - Ensures that intellectual property is secured.
+
+- 💳 **Purchase Security** – `RSA`
+  - Simulates encrypted credit card and billing data during purchases.
+  - RSA public-key encryption ensures only the server can decrypt sensitive information.
+
+- 📧 **Contact Form Integrity** – `HMAC`
+  - Verifies that contact form data is untampered using hash-based message authentication codes.
+  - Ensures message authenticity and integrity.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | HTML, CSS, Bootstrap |
-| Backend | JSP (JavaServer Pages), JDBC |
-| Database | Apache Derby |
-| Security | SHA-256, AES, RSA, HMAC (Java Crypto APIs) |
+| Layer       | Technologies Used                                      |
+|-------------|--------------------------------------------------------|
+| Frontend    | HTML, CSS, Bootstrap (for responsive design)          |
+| Backend     | JSP (JavaServer Pages), Servlet architecture           |
+| Database    | Apache Derby (embedded or client-server mode)          |
+| Connectivity| JDBC (Java Database Connectivity)                      |
+| Encryption  | Java Crypto APIs - SHA-256, AES, RSA, HMAC             |
+| Tools       | NetBeans or Eclipse IDE, Apache Tomcat (server)        |
 
 ---
-
-## 🗂️ Project Structure
-
