@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Art Gallery - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Custom Styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Hide scroll bars */
+        }
+        .header {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .footer {
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            z-index: 1000;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .main-content {
+            height: calc(100vh - 70px); /* Adjust height based on header and footer size */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Push content towards the bottom */
+            align-items: center;
+            text-align: center;
+            background-image: url('images/artwork.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding-bottom: 0px; /* Add padding to position above footer */
+        }
+        .hero-content {
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            position: relative;
+            color: #000000;
+        }
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+        .hero-content .btn-primary {
+            padding: 12px 25px;
+            font-size: 1.25rem;
+            background-color: #000000; /* Black background */
+            border: 2px solid black;   /* Black border */
+            color: white;              /* White text */
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        }
+        .hero-content .btn-primary:hover {
+            background-color: white;  /* White background on hover */
+            color: #000000;           /* Black text on hover */
+            border-color: #000000;    /* Black border on hover */
+        }
+        .gallery-preview {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #333;
+            max-width: 200px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+        .gallery-item p {
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Virtual Art Gallery</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <div class="hero-content">
+            <h4>Welcome to the Virtual Art Gallery</h4>
+            <p>Explore and discover beautiful digital artworks from talented artists around the world.</p>
+            <a href="authenticate.jsp" class="btn btn-primary">Explore Gallery</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Virtual Art Gallery. All rights reserved.</p>
+        <p>Follow us on: 
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
