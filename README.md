@@ -2,10 +2,11 @@
 
 **Virtual Art Gallery** is a secure, user-friendly online platform that enables users to **explore**, **upload**, and **purchase** digital artworks while ensuring high levels of **data privacy**, **authentication**, and **encryption**. It is built using **JSP**, **HTML**, **CSS**, and **JDBC**, with extensive use of Java's **cryptography libraries** (SHA-256, AES, RSA, HMAC) to safeguard user data and transactional operations.
 
-This project was developed as part of academic coursework and showcases both front-end interface design and robust back-end security practices.
-
 ![VAG Hero Image](https://github.com/Uday-Bhoi/Virtual-Art-Gallery/blob/main/Screenshots/VAG%20Hero%20Page.png?raw=true)
 
+This project was developed as part of academic coursework and showcases both front-end interface design and robust back-end security practices.
+
+[📄 **Click here to view the full project output**](https://docs.google.com/document/d/1Dyni07Pb8kw3FyRrdcJms4PpT-FYafGeX37f86Lfgws/edit?usp=sharing)
 ---
 
 ## 📌 Features
