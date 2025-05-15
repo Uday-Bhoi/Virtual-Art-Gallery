@@ -86,7 +86,7 @@ This section provides step-by-step instructions on how to use the contents of th
    - Navigate to the `Web Pages` directory.
    - Create the necessary `.jsp` files manually.
    - Copy the code from the `Web/` folder in this repository.
-     - This includes all `.jsp` files and the `index.html` file.
+   - This includes all `.jsp` files and the `index.html` file.
 
 ---
 
