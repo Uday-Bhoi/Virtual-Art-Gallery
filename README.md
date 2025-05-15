@@ -165,6 +165,7 @@ Once all steps are completed, your project should be ready to run with or withou
 
 ## 📂 Folder Structure Overview
 
+![Directory Structure](https://github.com/Uday-Bhoi/Virtual-Art-Gallery/blob/main/Screenshots/Net%20Beans%20Virtual%20Art%20Gallery%20Directory%20Structure.png?raw=true)
 
 ---
 
