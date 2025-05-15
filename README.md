@@ -4,6 +4,8 @@
 
 This project was developed as part of academic coursework and showcases both front-end interface design and robust back-end security practices.
 
+![VAG Hero Image](https://github.com/Uday-Bhoi/Virtual-Art-Gallery/blob/main/Screenshots/VAG%20Hero%20Page.png?raw=true)
+
 ---
 
 ## 📌 Features
