@@ -111,9 +111,13 @@ This section provides step-by-step instructions on how to use the contents of th
    You will find the Java source files in the following structure:
 
    src/java/
+   
    ├── P1/ ← SHA-256
+   
    ├── P2/ ← AES
+   
    ├── P3/ ← RSA
+   
    └── P4/ ← HMAC
 
 
