@@ -70,3 +70,96 @@ Implemented to address data breaches, impersonation, and information tampering:
 | Tools       | NetBeans or Eclipse IDE, Apache Tomcat (server)        |
 
 ---
+
+## 🛠️ How to Set Up and Use This Project in NetBeans
+
+This section provides step-by-step instructions on how to use the contents of this repository to set up a fully functional Java Web Application in NetBeans.
+
+---
+
+### 📦 Project Setup in NetBeans
+
+1. **Open NetBeans IDE.**
+2. **Create a new Java Web Application project**  
+   *(File → New Project → Java Web → Web Application)*.
+3. Inside your newly created project:
+   - Navigate to the `Web Pages` directory.
+   - Create the necessary `.jsp` files manually.
+   - Copy the code from the `Web/` folder in this repository.
+     - This includes all `.jsp` files and the `index.html` file.
+
+---
+
+### 🖼️ Setting Up the Images
+
+4. **Create an `images` folder** inside your project's `Web Pages` directory.
+   - Copy all image assets from the repository’s `images/` folder into this directory.
+   - If you place the images in a different directory, **update the image paths** accordingly in your `.jsp` and `.html` files.
+
+---
+
+### 🔐 Implementing Encryption Techniques (Optional)
+
+5. This project includes the implementation of **four encryption techniques**:
+   - SHA-256
+   - AES
+   - RSA
+   - HMAC
+
+6. These are implemented via **four separate Java packages**, each containing the logic for its respective algorithm.
+
+   You will find the Java source files in the following structure:
+
+
+7. In your NetBeans project:
+- Create **four packages** named `P1`, `P2`, `P3`, and `P4` under your `Source Packages`.
+- Copy the corresponding Java files from the repository into each package.
+
+8. The `.jsp` pages use `import` statements to utilize these encryption techniques.  
+You can identify which technique is used in a page by reviewing its import statements.
+
+---
+
+### ⚠️ Optional: Skipping Encryption Setup
+
+If you do **not** wish to implement encryption:
+
+- **Do not create the `P1` to `P4` packages**.
+- In the `.jsp` files, **remove or comment out any import statements** that reference these packages.
+- This allows the project to run **without encryption functionality**.
+
+> 🔸 **Note:** This step is optional. Only follow it if you don’t want to include encryption or information security features in your project.
+
+---
+
+### 🗃️ Database Configuration
+
+9. This project requires a backend **database** to function.
+
+- You must **create your own database** and update the connection details in the code.
+- Ensure the structure (tables, columns, etc.) matches what is expected in the application logic.
+
+---
+
+## ✅ Final Checklist
+
+- [x] Java Web Application project created in NetBeans  
+- [x] JSP and HTML files copied to the `Web Pages` directory  
+- [x] `images` folder set up and image paths updated if necessary  
+- [x] (Optional) Encryption packages (`P1` to `P4`) created and Java code copied  
+- [x] Database created and connection strings updated  
+
+Once all steps are completed, your project should be ready to run with or without encryption features.
+
+---
+
+## 📂 Folder Structure Overview
+
+
+---
+
+## 📜 License
+
+This project is for educational purposes. You may modify and reuse it in your own work with proper attribution.
+
+---
