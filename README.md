@@ -110,8 +110,14 @@ This section provides step-by-step instructions on how to use the contents of th
 
    You will find the Java source files in the following structure:
 
+   src/java/
+   ├── P1/ ← SHA-256
+   ├── P2/ ← AES
+   ├── P3/ ← RSA
+   └── P4/ ← HMAC
 
-7. In your NetBeans project:
+
+8. In your NetBeans project:
 - Create **four packages** named `P1`, `P2`, `P3`, and `P4` under your `Source Packages`.
 - Copy the corresponding Java files from the repository into each package.
 
